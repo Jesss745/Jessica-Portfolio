@@ -1,29 +1,32 @@
 html {
-    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2.5vw;
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding, 50px);
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-size: .5rem;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     background-color: var(--neutral-000);
 }
 
 h1 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 3rem;
-    margin-bottom: 0rem;
+    font-size: 2rem;
 }
 
 h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
 }
 
 .style-header{
@@ -31,25 +34,29 @@ h2 {
 }
 
 h3 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-size: 1.65rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
 }
 
 h4 {
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0.5rem 0;
 }
 
 h5 {
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: .8rem;
+    margin: 0.5rem 0;
 }
 
 h6 {
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: .6rem;
     margin-top: 0rem;
+    margin: 0;
 }
 
 /*========== NAVIGATION BAR ==========*/
@@ -78,11 +85,11 @@ header {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .nav-link {
-    font-size: 1rem;
+    font-size: .5rem;
     font-weight: 600;
     color: var(--neutral-600);
     text-decoration: none;
@@ -93,19 +100,18 @@ header {
 
 .nav-link:hover,
 .nav-link:focus {
-    background-color: var(--green-100);
     border-radius: 10px;
-    color: var(--neutral-900);
+    color: var(--green-300);
+    font-weight: 700;
 }
 
 /*========== FOOTER ==========*/
 
 .footer-container {
+    font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    padding: 2rem 0;
     border-top: 1px solid var(--neutral-100);
     background-color: var(--green-100);
 }
@@ -114,19 +120,18 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
 }
 
 .footer-contact {
     display: flex;
     align-items: baseline;
     flex-direction: row;
+    margin: .5rem;
     gap: 1.25rem;
-    padding: 0;
-    margin: 0;
 }
 
 .footer-icon {
+    width: 2.5vw;
     transition: transform 0.3s, color 0.3s;
 }
 
@@ -144,26 +149,23 @@ header {
 }
 
 .footer-link {
-    font-size: 1rem;
-    font-weight: 600;
     color: var(--neutral-900);
     text-decoration: none;
     transition: 0.3s;
-    margin: 0;
+    margin: 0.5rem;
+    padding: 0.1rem 0.2rem;
     align-self: center;
     text-align: center;
 }
 
-.footer-link:hover,
-.footer-link:focus {
-    color: var(--acceny);
+.footer-link:hover {
+    font-weight: 600;
+    font-size: .6rem;
+    color: var(--green-300);
 }
 
-.footer-link:focus-visible {
-    outline: 1px solid var(--green-300);
-    color: var(--green-300);
-    border-radius: 10px;
-    padding: 0 0.2rem;
+.footer-link:focus{
+    color: var(--accent);
 }
 
 .footer-text {
@@ -173,22 +175,11 @@ header {
     gap: 0.25rem;
     align-self: center;
     text-align: center;
+    margin: 1.5rem 0;
 }
 
 .footer-copyright {
-    font-size: 0.9rem;
-    font-weight: 400;
     color: var(--neutral-black);
-    margin: 0;
-    padding: 0;
-    align-self: center;
-    text-align: center;
-}
-
-.footer-note {
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: var(--neutral-600);
     margin: 0;
     padding: 0;
     align-self: center;
@@ -198,7 +189,7 @@ header {
 /*========== STYLE GUIDE ==========*/
 
 code {
-    background-color: var(--neutral-300);
+    background-color: var(--neutral-100);
     padding: 0.5rem;
     display: block;
     border-radius: 10px;
@@ -414,3 +405,66 @@ p>a:focus-visible,
     font-size: 1rem;
     margin-bottom: 2rem;
   }
+
+/*========== PROCESS ==========*/
+
+
+
+/*========== About Me ==========*/
+
+.section-dividers {
+    margin: 0 3rem;
+    padding: .1rem 0rem 1rem; /* top, right/left, bottom */
+}
+
+.Personal-Bio{
+    display: flex;
+}
+
+.Bio-Picture{
+    max-width: 25vw;
+    width: 100%;
+    height: 100%;
+    margin: 0rem 2rem 0 0;
+}
+
+.Bio-Content{
+    max-width: 50%;
+}
+
+.gallery-pictures{
+    margin: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.gallery-pictures img{
+    margin: 1rem;
+    max-width: 25vw;
+    max-height: 25vw;
+}
+
+#gallery{
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery-pictures{
+        margin: 0 2rem;
+        align-items: center;
+    }
+
+    .gallery-pictures img{
+        margin: 0;
+        max-width: 38vw;
+        max-height: 70vw;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+    .gallery-pictures img{
+        margin: 0.5rem;
+        max-height: 50vw;
+    }
+}
