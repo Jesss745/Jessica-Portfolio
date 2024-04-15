@@ -42,13 +42,13 @@ h3 {
 
 h4 {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: .9rem;
     margin: 0.5rem 0;
 }
 
 h5 {
     font-weight: 600;
-    font-size: .8rem;
+    font-size: .75rem;
     margin: 0.5rem 0;
 }
 
@@ -194,15 +194,20 @@ code {
     display: block;
     border-radius: 10px;
     color: var(--green-300);
-    font-size: 0.9rem;
+    font-size: 0.5rem;
 }
 
 .element {
-    margin: 0 3rem;
-    padding: .5rem 0rem 1rem; /* top, right/left, bottom */
+    margin: 0 2rem;
+    padding: .5rem 0rem .5rem; /* top, right/left, bottom */
     border-top-width: 0.2rem;
     border-top-style: solid;
-    border-top-color: var(--neutral-600);
+    border-top-color: var(--green-300);
+}
+
+.element-1 {
+    margin: 0 2rem;
+    padding: .5rem 0rem .5rem; /* top, right/left, bottom */
 }
 
 .element-main {
@@ -219,50 +224,27 @@ code {
     padding-top: 3rem;
 }
 
-.section-header nav{
-    margin: 2rem 0rem 0rem;
-}
-
-.section-header nav a {
-    margin-right: 1rem;
-    color:var(--neutral-black);
-    outline: 1.5px solid var(--neutral-white);
-    text-decoration: none;
-    transition: background-color 0.25s, color 0.25s;
-}
-
-.section-header nav a:hover, nav a:focus {
-    color: var(--neutral-black);
-    background-color: var(--neutral-white);
-}
-
-
 #hero nav p {
     margin-bottom: 2rem;
 }
 
-section nav a {
-    padding: 0.5rem;
-    background-color: var(--bg);
-    color: var(--neutral-600);
+.style-guide-nav{
+    margin-top: 1rem;
+}
+
+.style-guide-nav a{
+    margin: 1rem 1.5rem 0 0;
+    color: var(--neutral-900);
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.style-guide-nav  a:hover,
+.style-guide-nav a:focus {
+    color: var(--accent);
+    font-size: .6rem;
+    font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.25s, color 0.25s;
-    outline: 1px solid var(--neutral-600);
-    border-radius: 10px;
-}
-
-section nav a:hover,
-nav a:focus {
-    color: var(--neutral-black);
-    background-color: var(--green-300);
-}
-
-section nav a:focus-visible {
-    outline: 1px solid var(--green-100);
-}
-
-a:focus-visible {
-    outline: 1px solid var(--green-100);
 }
 
 .color-palette {
