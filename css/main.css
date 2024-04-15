@@ -1,29 +1,31 @@
 html {
-    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2.5vw;
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding, 50px);
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-size: .5rem;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     background-color: var(--neutral-000);
 }
 
 h1 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 3rem;
-    margin-bottom: 0rem;
+    font-size: 2rem;
 }
 
 h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .style-header{
@@ -31,24 +33,24 @@ h2 {
 }
 
 h3 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-size: 1.65rem;
-}
-
-h4 {
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 1.2rem;
 }
 
+h4 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 h5 {
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 700;
+    font-size: .8rem;
 }
 
 h6 {
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: .6rem;
     margin-top: 0rem;
 }
 
@@ -93,9 +95,9 @@ header {
 
 .nav-link:hover,
 .nav-link:focus {
-    background-color: var(--green-100);
     border-radius: 10px;
-    color: var(--neutral-900);
+    color: var(--green-300);
+    font-weight: 700;
 }
 
 /*========== FOOTER ==========*/
@@ -156,7 +158,7 @@ header {
 
 .footer-link:hover,
 .footer-link:focus {
-    color: var(--acceny);
+    color: var(--accent);
 }
 
 .footer-link:focus-visible {
@@ -198,7 +200,7 @@ header {
 /*========== STYLE GUIDE ==========*/
 
 code {
-    background-color: var(--neutral-300);
+    background-color: var(--neutral-100);
     padding: 0.5rem;
     display: block;
     border-radius: 10px;
@@ -414,3 +416,63 @@ p>a:focus-visible,
     font-size: 1rem;
     margin-bottom: 2rem;
   }
+
+/*========== PROCESS ==========*/
+
+
+
+/*========== About Me ==========*/
+
+.section-dividers {
+    margin: 0 3rem;
+    padding: .1rem 0rem 1rem; /* top, right/left, bottom */
+}
+
+.Personal-Bio{
+    display: flex;
+}
+
+.Jess-Picture{
+    max-width: 25vw;
+    width: 100%;
+    height: 100%;
+    margin: 0rem 2rem 0 0;
+}
+
+.Bio-Content{
+    max-width: 50%;
+}
+
+.gallery-pictures{
+    margin: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.gallery-pictures img{
+    margin: 1rem;
+    max-width: 25vw;
+    max-height: 25vw;
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery-pictures{
+        margin: 0 2rem;
+        align-items: center;
+    }
+
+    .gallery-pictures img{
+        margin: 0.5rem 0;
+        max-width: 50vw;
+        max-height: 40vw;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+    .gallery-pictures img{
+        margin: 0.5rem 0;
+        max-width: 40vw;
+        max-height: 60vw;
+    }
+}

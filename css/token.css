@@ -2,10 +2,11 @@
     /* BRAND COLORS */
     --white: #FFFFFf;
     --neutral-white: #F6F5F4;
+    --neutral-100: #DCDCDC;
     --neutral-300: #B1B1B1;
     --neutral-600: #838383;
     --neutral-black: #181817;
-    --green-100: #8e9b66;
+    --green-100: #A5B576;
     --green-200: #5a6e3a;
     --green-300: #2b4521;
     --accent: #f98f2a;
@@ -21,6 +22,10 @@
 
   .color-neutral-300 {
     background-color: var(--neutral-300);
+  }
+
+  .color-neutral-100 {
+    background-color: var(--neutral-100);
   }
 
   .color-white {
