@@ -78,6 +78,16 @@ header {
     margin-top: 0;
 }
 
+.logo{
+    max-width: 3rem;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.logo:hover{
+    transform: scale(1.05); 
+}
+
 .nav-container {
     display: flex;
     flex-direction: row;
@@ -238,6 +248,7 @@ code {
     padding-bottom: 5rem;
     padding-top: 3rem;
 }
+
 
 #hero nav p {
     margin-bottom: 2rem;
@@ -408,7 +419,65 @@ p>a:focus-visible,
   }
 
 /*========== PROCESS ==========*/
+.banner-image{
+    max-width: 100%;
+}
 
+.header{
+    font-size: .6rem;
+    font-weight: 700;
+    margin: .5rem 0 .1rem 0;
+}
+
+.green{
+    color: var(--green-300);
+}
+
+.spacing{
+    margin-bottom: 2.5rem;
+    font-style: italic;
+}
+
+.section-dividers-process {
+    display: flex;
+}
+
+.project-opener{
+    margin: 2rem 2rem;
+    width: 55%;
+}
+
+.responsibilities{
+    margin: 3rem 0 0 2rem;
+    width: 20%;
+}
+
+.line-divider{
+    margin: 0 2rem;
+    border-top-width: 0.2rem;
+    border-top-style: solid;
+    border-top-color: var(--green-300);
+}
+
+.process-image, .process-image-style{
+    max-width: 50vw;
+    max-height: 50vw;
+    margin: 3rem auto 1rem auto;
+}
+
+.right{
+    margin-left: 13rem;
+}
+
+.middle{
+    margin-left: 7.5rem
+}
+
+.section-dividers-explain {
+    margin: 0 3rem 4rem;
+    padding: .1rem 0rem 1rem; /* top, right/left, bottom */
+    width: 70%;
+}
 
 
 /*========== About Me ==========*/
@@ -495,6 +564,14 @@ p>a:focus-visible,
 }
 
 @media only screen and (max-width: 480px) {
+    body {
+        font-size: .7rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
     .gallery-pictures{
         margin: 0 2rem;
         align-items: center;
@@ -506,6 +583,32 @@ p>a:focus-visible,
         max-height: 70vw;
     }
 
+    .section-dividers-explain {
+        margin: 0 3rem 2rem;
+    }
+
+    .process-image{
+        max-width: 60vw;
+        max-height: 60vw;
+        margin: 2rem auto 1rem auto;
+    }
+
+    .process-image-style{
+        max-width: 30vw;
+        max-height: 30vw;
+    }
+
+
+    .right{
+        margin-left: 7rem;
+    }
+
+    .middle{
+        margin-left: 3rem;
+    }
+
+
+
     .about-me{
     margin: 1rem 5rem
     }
@@ -516,6 +619,14 @@ p>a:focus-visible,
 }
 
 @media only screen and (max-width: 960px) {
+    body {
+        font-size: .75rem;
+    }
+
+    .nav-link {
+        font-size: .8rem;
+    }
+
     .gallery-pictures img{
         margin: 0.5rem;
         max-height: 50vw;
