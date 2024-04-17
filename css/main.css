@@ -465,6 +465,12 @@ p>a:focus-visible,
     margin: 3rem auto 1rem auto;
 }
 
+.process-image-special{
+    max-width: 35vw;
+    max-height: 40vw;
+    margin: 3rem auto 1rem auto;
+}
+
 .right{
     margin-left: 13rem;
 }
