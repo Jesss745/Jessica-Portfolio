@@ -1,0 +1,60 @@
+@import "variables";
+
+@media only screen and (max-width: 480px) {
+	body {
+		font-size: .7rem;
+	}
+	.nav-link {
+		font-size: 1rem;
+	}
+	.gallery-pictures {
+		margin: 0 2rem;
+		align-items: center;
+		img {
+			margin: 0;
+			max-width: 38vw;
+			max-height: 70vw;
+		}
+	}
+	.section-dividers-explain {
+		margin: 0 3rem 2rem;
+	}
+	.process-image {
+		max-width: 60vw;
+		max-height: 60vw;
+		margin: 2rem auto 1rem auto;
+	}
+	.process-image-style {
+		max-width: 30vw;
+		max-height: 30vw;
+	}
+	.right {
+		margin-left: 7rem;
+	}
+	.middle {
+		margin-left: 3rem;
+	}
+	.about-me {
+		margin: 1rem 5rem;
+	}
+	#project-showcase {
+		max-width: 65vw;
+	}
+	.project-image {
+		max-width: 65vw;
+	}
+}
+@media only screen and (max-width: 960px) {
+	body {
+		font-size: .75rem;
+	}
+	.nav-link {
+		font-size: .8rem;
+	}
+	.gallery-pictures {
+		img {
+			margin: 0.5rem;
+			max-height: 50vw;
+		}
+	}
+}
