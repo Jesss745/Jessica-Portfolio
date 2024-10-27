@@ -9,6 +9,7 @@
     --green-100: #A5B576;
     --green-200: #5a6e3a;
     --green-300: #2b4521;
+    --green-500: #172b0f;
     --accent: #88333D;
   }
 
@@ -31,6 +32,11 @@
   .color-white {
     background-color: var(--neutral-white);
   }
+
+  .color-green-500 {
+    background-color: var(--green-500);
+  }
+
 
   .color-green-300 {
     background-color: var(--green-300);

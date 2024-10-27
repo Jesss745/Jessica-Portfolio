@@ -26,7 +26,7 @@
             </a>
             <div class="nav-menu" id="nav-menu">
                 <a href="about.html" class="nav-link">About</a>
-                <a href="index.html" class="nav-link">Projects</a>
+                <a href="projects.html" class="nav-link">Projects</a>
                 <a href="style_guide_page.html" class="nav-link">Style Guide</a>
                 <a href="https://drive.google.com/file/d/1JYiIS35oQ02rS1vRjMLrGmRYJHG1wGGN/view?usp=sharing" class="nav-link">Resume</a>
             </div>
@@ -42,8 +42,18 @@
                     <h2>Hi, I'm Jess! :)</h2>
                     <p> I'm an interdisciplinary UX and Product Designer based passionate about bringing my ideas and product into reality through my experince creating illustrations and design.</p>
                     <div class="btn-container">
-                        <a href="#project-showcase" class="primary-btn">Projects</a>
-                        <a href="https://drive.google.com/file/d/12mtryceAKXAb-oqXpOfH9m4fQJt8gUsi/view?usp=sharing" class="secondary-btn">Resume</a>
+                        <button class="pushable">
+                            <span class="front">
+                                <a href="#project-showcase" class="links"> Projects</a>
+                            </span>
+                          </button>
+
+                          <button class="pushable">
+                            <span class="front2">
+                                <a href="https://drive.google.com/file/d/12mtryceAKXAb-oqXpOfH9m4fQJt8gUsi/view?usp=sharing" 
+                                class="links2">Resume</a>
+                            </span>
+                          </button>
                     </div>
                 </div>
             </div>
@@ -52,24 +62,34 @@
 
     <section id="project-showcase">
         <h3> My Works </h3>
-        <div>
+        <div class="#">
             <h4 class="h4_change"> LIVESTOCK - UX Research and Art Direction </h4>
-            <div class="project-hover" >
-                <a href="livestock_page.html">
-                    <img class="project-image" src="img/LIVESTOCK.png" alt="A case study of my interactive lookbook made for LIVESTOCK ">
-                <div class="overlay">LIVESTOCK Interactive Lookbook</div>
-                </a>
-            </div>
+            <a href="livestock_page.html">
+                <div class="product-image-block">
+                    <img class="project-image" src="img/LIVESTOCK.png"
+                        alt="A case study of my interactive lookbook made for LIVESTOCK ">
+                    <div class="see-more-button">
+                        <div class="see-more-text">LIVESTOCK Interactive Lookbook</div>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div>
-            <h4 class="h4_change"> Candlelight Concert - Art Direction </h4>
-            <div class="project-hover">
-                <a href="candlelight_page.html">
-                    <img class="project-image" src="img/CANDLELIGHT.png" alt="A case study of a website redesign I made for Candlelight Concert">
-                    <div class="overlay">Candlelight Concert Website Redesign </div>
-                </a>
-            </div>
+
+        <div class="#">
+            <h4 class="h_change"> Candlelight Concert - Art Direction </h4>
+            <a href="candlelight_page.html">
+                <div class="product-image-block">
+                    <img class="project-image" src="img/CANDLELIGHT.png"
+                        alt="A case study of a website redesign I made for Candlelight Concert ">
+                    <div class="see-more-button">
+                        <div class="see-more-text">Candlelight Concert Website Redesign</div>
+                    </div>
+                </div>
+            </a>
         </div>
+
+        <br>
+        <br>
     </section>
 
     
