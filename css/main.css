@@ -7,6 +7,45 @@
   background-color: var(--green-100);
 }
 
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-link {
+  font-size: 0.5rem;
+  font-weight: 600;
+  color: var(--neutral-600);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-image: linear-gradient(var(--green-300), var(--green-300)); /* Underline color */
+  background-position: 0 100%; /* Position underline at the bottom */
+  background-size: 0% 2px; /* Hidden underline initially */
+  background-repeat: no-repeat;
+  
+  transition: color 0.5s ease-in-out, background-size 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition for both color and underline */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--green-300); 
+  font-weight: 700;
+  background-size: 100% 4px;
+  background-position: 0 98%;
+}
+
 .footer-nav {
   display: flex;
   flex-direction: column;
@@ -30,6 +69,30 @@
   transform: scale(1.2);
 }
 
+.footer-link {
+  font-size: 0.5rem;
+  font-weight: 600;
+  color: var(--neutral-900);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-image: linear-gradient(var(--green-300), var(--green-300)); /* Underline color */
+  background-position: 0 100%; /* Position underline at the bottom */
+  background-size: 0% 2px; /* Hidden underline initially */
+  background-repeat: no-repeat;
+  
+  transition: color 0.5s ease-in-out, background-size 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition for both color and underline */
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--green-300); 
+  font-weight: 700;
+  background-size: 100% 4px;
+  background-position: 0 98%;
+}
+
+
 .footer-links {
   gap: 1rem 2rem;
   display: flex;
@@ -37,26 +100,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.footer-link {
-  color: var(--neutral-900);
-  text-decoration: none;
-  transition: 0.3s;
-  margin: 0.5rem;
-  padding: 0.1rem 0.2rem;
-  align-self: center;
-  text-align: center;
-}
-
-.footer-link:hover {
-  font-weight: 600;
-  font-size: 0.6rem;
-  color: var(--green-300);
-}
-
-.footer-link:focus {
-  color: var(--accent);
 }
 
 .footer-text {
