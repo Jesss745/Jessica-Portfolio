@@ -26,7 +26,7 @@ const carousels = {
   
   async function render() {
     // load data
-    const GachaData = await d3.csv("../data/GachaGames.csv");
+    const GachaData = await d3.csv("data/GachaGames.csv");
     const firstPart = GachaData.filter((item) => { return item.Year_Released <= 2017 })
     const secondPart = GachaData.filter((item) => { return item.Year_Released <= 2024 & item.Year_Released >= 2018 })
     //const GoodSales = GachaData.filter((item) => { return item.Drop_Rates >= 5 })
